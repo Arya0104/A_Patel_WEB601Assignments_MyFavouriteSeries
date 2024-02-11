@@ -1,12 +1,36 @@
 .content-card {
-    border: 1px solid #333;
-    padding: 11px;
-    margin: 14px;
-  }
-  
-  .first-item {
-    border: 2px solid #333;
-    padding: 17px;
-    margin: 22px;
-  }
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px;
+}
 
+.first-item {
+  border: 2px solid #333;
+  padding: 15px;
+  margin: 20px;
+}
+
+h1{
+  background-color: blue;
+}
+
+h1:nth-of-type(2){
+  background-color: red;
+}
+
+h1:last-of-type{
+ background-color: rgb(245, 48, 58);
+}
+
+div{
+  background-color: rgb(127, 229, 205);
+  color: rgb(1, 146, 45);
+}
+div:nth-of-type(2){
+  background-color:rgb(0, 79, 128);
+  color:rgb(137, 228, 106);
+}
+div:last-of-type{
+  background-color:rgb(139, 146, 143);
+  color: rgb(0, 0, 0);
+}
