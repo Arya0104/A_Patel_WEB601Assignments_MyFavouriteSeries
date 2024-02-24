@@ -5,11 +5,13 @@ import { Content } from '../helper-files/content-interface';
 import { ContentCardComponent } from '../content-card/content-card.component';
 import { TypegiverPipe } from '../typegiver.pipe';
 import { FormsModule } from '@angular/forms';
+import { HoverAffectDirective } from '../hover-affect.directive';
+
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [CommonModule, ContentCardComponent, TypegiverPipe, FormsModule],
+  imports: [CommonModule, ContentCardComponent, TypegiverPipe, FormsModule, HoverAffectDirective],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })
@@ -55,7 +57,7 @@ export class ContentListComponent implements OnInit {
         title: "Dark",
         description:"Dark is a German science fiction thriller television series co-created by Baran bo Odar and Jantje Friese.",
         creator:"Jantje Friese",
-        imgURL:"https://m.media-amazon.com/images/I/81oWDX24u+L._UF1000,1000_QL80_.jpg",
+        imgURL:"",
         type:"Reality",
         tags: ["Thriller", "Germany"]
       },
